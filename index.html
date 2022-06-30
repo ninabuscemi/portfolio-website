@@ -17,55 +17,59 @@
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
-<body>
 <!-- Header Section -->
+<body>
 <header>
-<!-- Navigation -->
-  <div>
-    <img src="img/logo.png" width="80" alt="Nina">
+  <div class="container">
+  <picture>
+    <img src="img/logo.png" class="logo" alt="Nina">
+  </picture>
     <nav>
       <ul>
        <li><a href="index.html">Work</a></li>
-       <li><a href="about.html">About Me</a></li>
+       <li><a href="about.html">About</a></li>
        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </div>
 </header>
-<main>
 <!-- Hero Section -->
-<div>
+<main>
+<div id=hero>
+  <div class="container">
       <h1>
-        <span>Hi, I'm Nina, a UX Designer creating solutions that address the user's needs.</span>
+      Hi, I'm Nina, a UX Designer creating solutions that address the user's needs.
       </h1>
       <p>I love expressing my eye for creativity through designing visual languages and solving complex problems.</p>
 </div>
-<!-- For your work/projects -->
-     <div>
+</div>
+<!-- Work/projects -->
+<div id="work">
+<div class="container">
        <h2>My Work</h2>
-     </div>
+       <div class="row">
 <!-- Project 1 -->
-<div>
       <h3>Abile Case Study</h3>
       <p>Enable anyone, anywhere to connect with an expert virtually in any field of their interest.</p>
       <p><strong>Role:</strong> UX Researcher & UI Designer</p>
       <p><strong>Duration:</strong> June 2021-March 2022</p>
-      <a href="abile.html">View full case study for Abile!</a>
+      <a href="abile.html" class="abile">View full case study for Abile!</a>
      </div>
+   </div>
+ </div>
 </main>
 <!-- Social Media links or Footer -->
-<div>
-  <footer>
-   <h3>Let's get in touch!</h3>
-   I'd love to chat about the value I could bring to your team. Contact me below!
-   <p></p>
-      <footer id="contact">
-      <a href="http://www.behance.net/ngbuscemiffbc" target="blank"><img src="img/behance_logo.png" width="30" alt="behance"></a>
-      <a href="http://www.linkedin.com/in/nina-buscemi-082a59207/" target="blank"><img src="img/linked_logo.png" width="20" alt="linkedin"></a>
-      <a href="mailto:ngbuscemi@gmail.com"><img src="img/mail_logo.png" width="25" alt="gmail"></a>
-      <p>Reach me by phone at: <a href="(123)456-7890">(123)456-7890</a></p>
-      <p>Copyright Nina Buscemi 2022</p>
-   </footer>
+<footer id="contact">
+<div class="container">
+     <h3>Let's get in touch!</h3>
+     I'd love to chat about the value I could bring to your team. Contact me below!
+     <p></p>
+        <a href="http://www.behance.net/ngbuscemiffbc" target="blank"><img src="img/behance_logo.png" width="30" alt="behance"></a>
+        <a href="http://www.linkedin.com/in/nina-buscemi-082a59207/" target="blank"><img src="img/linked_logo.png" width="20" alt="linkedin"></a>
+        <a href="mailto:ngbuscemi@gmail.com"><img src="img/mail_logo.png" width="25" alt="gmail"></a>
+        <p>Reach me by phone at: <a href="(123)456-7890" class="phone">(123)456-7890</a></p>
+        <p>Copyright Nina Buscemi 2022</p>
 </div>
+</footer>
 </body>
 </html>

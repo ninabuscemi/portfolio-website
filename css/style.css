@@ -1,34 +1,120 @@
-body {
-  background-color: #42A7F0;
-  font-family: arial;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.5;
+/*
+Colors used:
+Primary Color (Blue): #42A7F0
+Secondary Color (Light blue): #B7DDFA
+Primary Text Color (Black): #11110
+Secondary Text Color (Grey): #
+*/
+
+/*
+Background color: #16558F
+Text color: #B8E3FF
+Secondary color: #61B0B7, #0583D2
+*/
+
+* {
+  box-sizing: border-box;
 }
 
-/* Headers */
+body {
+  color: white;
+  background-color: #16558F;
+  font-family: arial;
+  font-size: 1.0em;
+  font-weight: 400;
+  line-height: 1.75;
+  text-align: center;
+}
+
+main {
+  padding-top: 200px;
+}
+
+#hero {
+  color: black;
+  display: inline-block;
+  width: 100%;
+  background-color: white;
+}
+
 h1 {
+  margin: 1;
   font-size: 32px;
   font-weight:900;
   line-height: 1;
 }
 
 h3 {
+  margin: 2;
   font-size: 17px;
   font-weight: 0;
   line-height: 1;
 }
 
+img {
+  width: 100%;
+}
+
+/* Home */
+.logo {
+  max-width: 250px;
+  text-align: center;
+}
+
+header {
+text-align: center;
+background-color: white;
+padding: 10px 5;
+position: fixed;
+width: 100%;
+-webkit-box-shadow: 0px 7px 5px 0px rgba(50, 50, 50, 0.75);
+-moz-box-shadow:    0px 7px 5px 0px rgba(50, 50, 50, 0.75);
+box-shadow:         0px 7px 5px 0px rgba(50, 50, 50, 0.75);
+}
+
+/* Layout Styling */
+.container {
+  padding: 0 15px;
+  max width: 1220px;
+}
+
+contain.selector {
+  position: relative;
+  float: right;
+}
+
+.row {
+  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+}
+
+#work .row {
+  padding-bottom: 25px; border-bottom: 1px solid black;
+}
+
+hero h1 {
+  text-align: center;
+  background-color: #B7DDFA
+}
+
 /* Navigation */
-nav ul li a {
+ul > li {
+list-style-type: none;
+}
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav > ul > li {
   display: inline-block;
-  padding: none;
-  text-decoration: none;
-  color: black;
-  font-family: arial;
-  font-size: 16px;
-  font-weight: 580;
-  margin: 1px 3px;
+}
+
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: none;
+  font-weight: 700;
+  color: #4a4a4a;
 }
 
 nav ul li a,
@@ -38,11 +124,6 @@ nav ul li a:before {
 }
 nav ul li a:hover {
   color: white;
-}
-
-/* Images */
-img {
-  width: none;
 }
 
 /* CTA Button */
@@ -104,10 +185,28 @@ a.resume:hover {
    transition: all .4s ease-in-out;
 }
 
-/*
-Colors used:
-Primary Color (Blue): #42A7F0
-Secondary Color (Light blue): #B7DDFA
-Primary Text Color (Black): #11110
-Secondary Text Color (Grey): #
-*/
+/* Abile link */
+a.abile {
+  color: white;
+  text-decoration: underline; /* No underlining */
+  transition: all .5s;'
+}
+
+a.abile:hover {
+  color: black;
+  transition: all .5s;'
+  text-decoration: underline; /* Underlining when hovering over a link */
+}
+
+/* Phone # */
+a.phone {
+  color: white;
+  text-decoration: underline; /* No underlining */
+  transition: all .5s;'
+}
+
+a.phone:hover {
+  color: black;
+  transition: all .5s;'
+  text-decoration: underline; /* Underlining when hovering over a link */
+}
