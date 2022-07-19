@@ -16,20 +16,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!--fontAwesome Icons-->
+    <script src="https://kit.fontawesome.com/d842c597a4.js" crossorigin="anonymous"></script>
   </head>
 <!-- Header Section -->
 <body>
 <header>
   <div class="container">
+    <div class="navtoggle" id="myNavtoggle">
     <a href="index.html" target="blank"><img src="img/logo.png" class="logo" alt="Nina"></a>
-    <nav>
-      <ul>
-       <li><a href="index.html">Work</a></li>
-       <li><a href="about.html">About</a></li>
-       <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </div>
+      <nav>
+        <ul>
+         <li><a href="index.html" onclick="menuToggle()">Work</a></li>
+         <li><a href="about.html" onclick="menuToggle()">About</a></li>
+         <li><a href="#footer" onclick="menuToggle()">Contact</a></li>
+         <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+        </ul>
+      </nav>
+    </div>
 </header>
 <!-- Case Study -->
 <main>

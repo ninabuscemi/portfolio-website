@@ -129,9 +129,13 @@ ul > li {
 }
 
 /* Navigation */
+nav {
+  box-sizing: border-box;
+  width: 100%;
+}
 nav > ul {
   list-style-type: none;
-  padding: 2;
+  box-sizing: border-box;
 }
 
 nav > ul > li {
@@ -143,6 +147,7 @@ nav > ul > li > a {
   text-transform: none;
   font-weight: 700;
   color: #4a4a4a;
+  text-decoration: none;
 }
 
 nav ul li a,
@@ -151,7 +156,39 @@ nav ul li a:before {
   transition: all .5s;
 }
 nav ul li a:hover {
-  color: green;
+  color: #16558F;
+}
+.navtoggle li:not(:last-child) {
+  display: none; /* Hide all navigation elements except for hamburger icon in mobile view */
+}
+
+.navtoggle,
+.navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .hamburgericon {
+  position: absolute;
+  right: 0;
+  top: 5px;
+  font-size: 30px;
+  padding-right: 5px;
+}
+
+.navtoggle.responsive li  {
+  display: block;
+}
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid #16558F;
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
 }
 
 /* About page buttons (work) */
@@ -310,6 +347,30 @@ Medium devices (640px and larger)
     width: auto;
     float: right;
   }
+  nav > ul {
+   margin: 1em 0;
+ }
+
+ nav > ul > li {
+   display: inline-block;
+   box-sizing: border-box;
+ }
+
+ .navtoggle.responsive nav {
+   padding: 0;
+ }
+
+ .navtoggle.responsive li {
+   padding: 0;
+ }
+
+ .navtoggle li:not(:last-child) {
+   display: inline-block;
+ }
+
+ .navtoggle li:last-child {
+   display: none;
+ }
 
   .row::after{
     content: "";
