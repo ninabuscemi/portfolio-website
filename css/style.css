@@ -43,6 +43,7 @@ Secondary color: #61B0B7, #0583D2
   max-width: 150px;
 }
 
+*
 header {
 text-align: unset;
 background-color: white;
@@ -63,11 +64,10 @@ body {
   font-weight: 300;
   font-size: 17px;
   line-height: 1.75;
-  margin: 0 auto;
 }
 
 main {
-  padding-top: 153px;
+  padding-top: 130px;
 }
 
 #hero {
@@ -120,7 +120,7 @@ contain.selector {
 }
 
 #work.container {
-  padding-top: 20px;
+  padding-top: 10px;
   border-bottom: 1px solid black;
 }
 
@@ -151,7 +151,7 @@ nav ul li a:before {
   transition: all .5s;
 }
 nav ul li a:hover {
-  color: white;
+  color: green;
 }
 
 /* About page buttons (work) */
@@ -199,18 +199,6 @@ a.resume:hover {
    transition: all .5s ease-in-out;
 }
 
-/* About page (skills & tools) */
-
-.col-xs-1 {
-  float: left;
-  width: 100%;
-  max-width: 100%;
-}
-
-.col-md-6 {
-   width: 50%;
-  max-width: 100%;
- }
 
 /* Index (Abile link) */
 a.abile {
@@ -239,13 +227,7 @@ a.phone:hover {
 }
 
 /* Columns */
-.col-xs-1 {
-  float: left;
-  width: 100%;
-  max-width: 100%;
-}
-
-.col-md-6 {
+/*.col-md-6 {
    width: 50%;
   max-width: 100%;
  }
@@ -260,6 +242,24 @@ a.phone:hover {
       width: 30%;
       height: 400px;
       float: right;
+} */
+
+/*Style the social icons*/
+.social {
+  list-style-type: none;
+  padding: 0;
+  margin-left: -10px;
+}
+
+.social li {
+  display: inline-block;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.social img {
+  height: 24px;
+  width: 32px;
 }
 
 /*Media Queries*/
@@ -272,49 +272,33 @@ a.phone:hover {
 }
 
 /*float all columns left*/
-[class*="col-"] {
-  padding: 10px;
-}
 
-/* ==============================
-Small devices (120px and larger)
-================================= */
-@media only screen and (min-width: 120px) {
-  body {
-    font-size: 15px;
+[class*="col-md-6 col-lg-3"]{
+    width: 50%;
+    box-sizing: border-box;
+    padding: 10px;
+    overflow: auto;
+    float: left;
   }
-
-  header {
-    text-align: center;
-    padding: 20px 0 13px;
-  }
-
-  main {
-    padding-top: 150px;
-  }
-
-  nav {
-    width: auto;
-    text-align: center;
-  }
-
-  .logo {
-    position: relative;
-    left: 13px;
-  }
-
-}
 
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
+
+  .col-md-7 {
+   width: 80%;
+   float: right;
+   width: auto;
+ }
+
   body {
     font-size: 15px;
   }
 
   main {
-    padding-top: 100px;
+    padding-top: 105px;
+
   }
 
   header {
@@ -325,6 +309,19 @@ Medium devices (640px and larger)
   nav {
     width: auto;
     float: right;
+  }
+
+  .row::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+[class*="col-md-6 col-lg-3"]{
+    width: 50%;
+    box-sizing: border-box;
+    padding: 10px;
+    overflow: auto;
+    float: left;
   }
 }
 
@@ -332,52 +329,29 @@ Medium devices (640px and larger)
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
-  body {
-    font-size: 15px;
-  }
 
-  header {
-    text-align: unset;
-    padding: 20px 0 13px;
-  }
+  .col-md-7 {
+   width: 80%;
+   float: right;
+   padding-top: 20px;
+   padding-left: 70px;
+   width: auto;
+ }
 
-  nav {
-    width: auto;
-    float: right;
-  }
-}
+ body {
+   font-size: 15px;
+ }
+ main {
+   padding-top: 105px;
+   padding-left: 70px;
+   padding-right: 70px;
+ }
 
-/* ==============================
-X-large devices (1440px or larger)
-================================= */
-@media only screen and (min-width: 1440px) {
-  body {
-    font-size: 15px;
-  }
-
-  header {
-    text-align: unset;
-    padding: 20px 0 13px;
-    width: 100%;
-  }
-
-  nav {
-    width: auto;
-    float: right;
-  }
-}
-
-/* ==============================
-Extra-large devices (2000px or larger)
-================================= */
-@media only screen and (min-width: 2000px) {
-  body {
-    font-size: 15px;
-  }
-
-  header {
-    text-align: unset;
-    padding: 20px 0 13px;
-    width: 100%;
-  }
+ [class*="col-md-6 col-lg-3"]{
+     width: 50%;
+     box-sizing: border-box;
+     padding: 10px;
+     overflow: auto;
+     float: left;
+   }
 }
