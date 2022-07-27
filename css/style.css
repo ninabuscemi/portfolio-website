@@ -462,6 +462,7 @@ Large devices (1024px or larger)
   .logo {
     width: 60px;
     float: left;
+    margin-right: 100px;
   }
 
   body {
@@ -474,8 +475,8 @@ Large devices (1024px or larger)
     height: auto;
     max-width: 4000px;
     min-width: 1400px;
-    padding-left: 400px;
-    padding-right: 300px;
+    padding-left: 390px;
+    padding-right: 290px;
     -webkit-box-shadow: 0 7px 5px 0 rgba(50, 50, 50, 0.75);
     -moz-box-shadow: 0 7px 5px 0 rgba(50, 50, 50, 0.75);
     box-shadow: 0 7px 5px 0 rgba(50, 50, 50, 0.75);
