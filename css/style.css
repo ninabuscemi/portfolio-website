@@ -370,7 +370,7 @@ Medium devices (640px and larger)
   }
 
   body {
-  font-size: 14px;
+    font-size: 14px;
   }
 
   header {
@@ -388,7 +388,6 @@ Medium devices (640px and larger)
     padding-right: 6em;
     float: right;
   }
-
 
   #hero {
     display: inline-block;
@@ -523,16 +522,17 @@ Large devices (1024px or larger)
     margin-top: 3;
   }
 
-   .navtoggle li:not(:last-child) {
-     display: inline-block;
-   }
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
 
   .navtoggle.responsive nav {
     padding-top: 40px;
   }
-   .navtoggle li:last-child {
-     display: none;
-   }
+
+  .navtoggle li:last-child {
+    display: none;
+  }
 
   .navtoggle.responsive li {
     padding: 0;
@@ -541,7 +541,6 @@ Large devices (1024px or larger)
   .navtoggle li:not(:last-child) {
     display: inline-block;
   }
-
 
   .navtoggle li:last-child {
     display: none;
