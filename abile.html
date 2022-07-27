@@ -21,16 +21,21 @@
   </head>
 <!-- Header Section -->
 <body>
+<center>
 <header>
   <div class="logo">
-  <a href="index.html" target="blank"><img src="img/logo.png" alt="Nina"></a></div>
+  <a href="index.html" target="_self"><img src="https://see.fontimg.com/api/renderfont4/lemD/eyJyIjoiZnMiLCJoIjo0MywidyI6MTI1MCwiZnMiOjM0LCJmZ2MiOiIjRjJFREU1IiwiYmdjIjoiIzNDQUJGNSIsInQiOjF9/TkI/bukhari-script.png" alt="Cursive fonts"></a></div>
   <div class="navtoggle" id="myNavtoggle">
     <nav>
       <ul>
-        <li><a href="index.html" onclick="menuToggle()">Work</a></li>
-        <li><a href="about.html" onclick="menuToggle()">About</a></li>
-        <li><a href="#footer" onclick="menuToggle()">Contact</a></li>
-        <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+        <li class="nav-item"><a href="index.html">Work</a></li>
+        <li class="nav-item"><a href="about.html">About</a></li>
+        <li class="nav-item"><a href="https://drive.google.com/file/d/1Sbf_4RXltG6z0gFkxV1WoLm-Jkd1gwvQ/view?usp=sharing" target="_blank" >Resume</a></li>
+        <li class="nav-item"><a href="#footer">Contact</a></li>
+        <li>
+            <p id="click_advance">
+                <a href="javascript:void(0);" class="icon" onclick="menuToggle()">
+                <i class="fas fa-bars"></i></a></p></li>
       </ul>
     </nav>
   </div>
@@ -65,7 +70,7 @@ I analyzed some existing competitors like LinkedIn, Handshake, CareerBuilder, an
 <div class="container">
 <div class="user-research"><h3>User Research</h3>
 We interviewed participants to ask them questions and gain insight into user experience with existing expert apps.
-<p>These were the topics of discussion and the results recorded:<p>
+<p>These were the topics of discussion and the results recorded:</p>
 </div>
 <h4>Sign up/sign in</h4>
 <ul>
@@ -131,11 +136,8 @@ We interviewed participants to ask them questions and gain insight into user exp
   <li>Networking with peers through discussion forums</li>
   <li>An engine to search and apply for jobs or internships</li>
 </ul>
-<!-- Scroll to top button-->
-<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 <!-- Social Media links or Footer -->
-<footer id="footer">
-<div class="container">
+<div id="footer" class="container">
      <h4>Let's get in touch!</h4>
     <p>I'd love to chat about the value I could bring to your team. Contact me below!</p>
     <ul class="social">
@@ -153,13 +155,12 @@ We interviewed participants to ask them questions and gain insight into user exp
             <a href="mailto:ngbuscemi@gmail.com"><img src="img/mail_logo.png" alt="gmail"></a>
         </li>
     </ul>
-
         <p>Reach me by phone at: <a href="(123)456-7890" class="phone">(123)456-7890</a></p>
         <p>Copyright Nina Buscemi 2022</p>
-    </div>
-</footer>
+  </div>
 </main>
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 <script src="js/scripts.js"></script>
+</center>
 </body>
 </html>
